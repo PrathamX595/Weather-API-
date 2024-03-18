@@ -28,15 +28,43 @@ h1{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    z-index: 0;
 }
+.containerDisplay{
+    position: absolute;
+    top: 30vh;
+    height: 50vh;
+    width:50vh;
+    border: 4px solid black;
+    border-radius: 10vh;
+    z-index: -1;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aquamarine;
 
+}
+#display{
+    margin: 0;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    width: 100%;
+}
+button{
+    border: 2px solid white;
+    border-radius: 3rem;
+    height: 2.5rem;
+    width: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
 #cloud{
     transform: scale(2);
     margin-left: 6rem;
     margin-right: 6rem;
     margin-top: 4rem;
-    
-    
 }
 #city{
     height: 3rem;
@@ -46,12 +74,4 @@ h1{
     margin-left: 2rem;
     margin-right: 2rem;
     padding-left: 1rem;
-}
-#search{
-    border: 2px solid white;
-    border-radius: 3rem;
-    height: 2.5rem;
-    width: 6rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
 }
